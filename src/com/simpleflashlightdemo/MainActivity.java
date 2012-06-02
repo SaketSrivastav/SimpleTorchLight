@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
 				public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
 					try{
-						if(cam != null){
+						if(cam == null){
 							cam = Camera.open();
 						}
 						camParams = cam.getParameters();
